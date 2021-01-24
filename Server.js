@@ -2,7 +2,8 @@ const axios = require('axios')
 const cors = require('cors')
 const express = require('express')
 const BodyParser = require('body-parser')
-const key = "43f5bfb9"
+const dotenv = require('dotenv').config()
+const key = dotenv.parsed.key
 
 const app = express()
 
