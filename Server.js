@@ -19,3 +19,7 @@ app.get('/:cidade/:estado', async (req, res) => {
     res.send(data)
 
 })
+
+app.listen(8000, () => {
+    console.log('rodando: http://localhost:8000/')
+})
