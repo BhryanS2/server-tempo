@@ -12,7 +12,7 @@ app.use(BodyParser.json())
 
 app.use(cors())
 
-app.get(`/weather/:cidade/:estado`, async (req, res) => {
+app.get('/:cidade/:estado', async (req, res) => {
     const { data } = await axios(`https://api.hgbrasil.com/weather?key=${key}&city_name=${req.params.cidade},${req.params.estado}`)
     //console.log(data)
     //list()
