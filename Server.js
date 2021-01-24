@@ -19,3 +19,5 @@ app.get('/:cidade/:estado', async (req, res) => {
     res.send(data)
 
 })
+
+app.listen(8000)
