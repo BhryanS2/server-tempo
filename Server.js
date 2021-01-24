@@ -1,7 +1,7 @@
 const axios = require('axios')
 const cors = require('cors')
 const express = require('express')
-const key = '43f5bfb9'
+const key = process.env.key
 
 const app = express()
 
