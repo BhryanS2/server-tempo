@@ -12,7 +12,6 @@ app.get('/weather/:cidade/:estado', async (req, res) => {
     res.send(data)
 
 })
-
-app.listen(8000, () => {
+app.listen(process.env.PORT || 8000, () => {
     console.log('rodando: http://localhost:8000/')
 })
