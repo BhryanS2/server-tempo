@@ -1,14 +1,9 @@
 const axios = require('axios')
 const cors = require('cors')
 const express = require('express')
-const BodyParser = require('body-parser')
-const dotenv = require('dotenv').config()
 const key = '43f5bfb9'
 
 const app = express()
-
-app.use(BodyParser.urlencoded({ extend: false }))
-app.use(BodyParser.json())
 
 app.use(cors())
 
