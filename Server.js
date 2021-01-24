@@ -3,7 +3,7 @@ const cors = require('cors')
 const express = require('express')
 const BodyParser = require('body-parser')
 const dotenv = require('dotenv').config()
-const key = dotenv.parsed.key
+const key = '43f5bfb9'
 
 const app = express()
 
